@@ -84,12 +84,20 @@
       padding: 10px 0;
     }
 
-    .ticker {
-      display: flex;
-      width: max-content;
-      animation: scroll 50s linear infinite;
-    }
+   .ticker {
+  display: flex;
+  width: fit-content;
+  animation: scroll 50s linear infinite;
+}
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start immediately */
+  }
+  100% {
+    transform: translateX(-50%); /* Move by half width since content is duplicated */
+  }
+}
     .tile {
       flex: 0 0 auto;
       background: #e0ffe0;
@@ -98,11 +106,6 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       white-space: nowrap;
-    }
-
-    @keyframes scroll {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
     }
     .section-header {
       text-align: center;
@@ -202,6 +205,27 @@
     <div class="section-header">Amount Won :-</div>
     <div class="ticker-wrapper">
     <div class="ticker">
+    <div class="tile">Pawan - Rs.5147</div>
+    <div class="tile">Suresh - Rs.7103</div>
+    <div class="tile">Abhishek - Rs.1215</div>
+    <div class="tile">Mukesh - Rs.1357</div>
+    <div class="tile">Rajesh - Rs.1500</div>
+    <div class="tile">Sam - Rs.4450</div>
+    <div class="tile">Manish - Rs.1000</div>
+    <div class="tile">Sonu - Rs.3153</div>
+    <div class="tile">Deepak - Rs.2620</div>
+    <div class="tile">Ronak - Rs.4810</div>
+    <div class="tile">Pooja - Rs.9990</div>
+    <div class="tile">Manju - Rs.7210</div>
+    <div class="tile">Manisha - Rs.1330</div>
+    <div class="tile">Keshav - Rs.4330</div>
+    <div class="tile">Ayan - Rs.8705</div>
+    <div class="tile">Jeeshan - Rs.3900</div>
+    <div class="tile">Anvesh - Rs.6000</div>
+    <div class="tile">Sara - Rs.10040</div>
+    <div class="tile">Saurabh - Rs.8712</div>
+    <div class="tile">Suraj - Rs.9800</div>
+        <!-- Repeat -->
     <div class="tile">Pawan - Rs.5147</div>
     <div class="tile">Suresh - Rs.7103</div>
     <div class="tile">Abhishek - Rs.1215</div>
